@@ -6,7 +6,7 @@ import pickle
 app = Flask(__name__)
 
 # Load the model
-def load_model(filename="\\DigitRecognizer\\digit_recognizer_model.pkl"):
+def load_model(filename="digit_recognizer_model.pkl"):
     """Load the trained model from a pickle file."""
     with open(filename, "rb") as f:
         model = pickle.load(f)
